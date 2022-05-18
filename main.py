@@ -6,7 +6,7 @@ from vars import var
 
 logging.getLogger("pyrogram").setLevel(logging.INFO)
 
-AnonyBot = Client(
+Memehub = Client(
     "Anonymous-Sender",
     api_id=var.API_ID,
     api_hash=var.API_HASH,
@@ -14,8 +14,8 @@ AnonyBot = Client(
     plugins=dict(root="plugins"),
 )
 
-AnonyBot.start()
-uname = (AnonyBot.get_me()).username
+Memehub.start()
+uname = (Memehub.get_me()).username
 print(f"@{uname} Deployed Successfully !")
 
 idle()
